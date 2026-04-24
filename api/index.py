@@ -121,7 +121,7 @@ def CheckUserEntitlement(OculusId: str) -> tuple[bool, str | None, dict | None]:
 def main():
     return "DISCORD.GG/APKMETHOD"
 
-@app.route("/api/PlayFabAuthentication", methods=["POST", "GET"])
+@app.route("https://canyonbouncers.vercel.app/api/PlayFabAuthentication", methods=["POST", "GET"])
 def playfabauthentication():
     global valid_host
     
