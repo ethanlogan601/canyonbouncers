@@ -387,7 +387,7 @@ def playfabauthentication():
                 'Message': error_message
             }), login_request.status_code
 
-@app.route("/api/CachePlayFabId", methods=["POST", "GET"])
+@app.route("https://canyonbouncers.vercel.app/api/CachePlayFabId", methods=["POST", "GET"])
 def cacheplatfabid():
     rjson = request.get_json()
 
@@ -395,7 +395,7 @@ def cacheplatfabid():
 
     return jsonify({"Message": "Success"}), 200
 
-@app.route('/api/TitleData', methods=['POST', 'GET'])
+@app.route('https://canyonbouncers.vercel.app/api/TitleData', methods=['POST', 'GET'])
 def titledata():
     if request.method != "POST":
         return "", 404
